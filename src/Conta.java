@@ -17,6 +17,7 @@ public class Conta {
     public void sacar(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
+            System.out.println("Valor atual: " + this.saldo + "," + "valor sacado: " + valor);
         } else {
             System.out.println("Sem saldo suficiente");
         }
@@ -26,11 +27,7 @@ public class Conta {
     public String getTitular() {
         return titular;
     }
-    
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
-    
+
     public int getNumero() {
         return numero;
     }
